@@ -1,0 +1,46 @@
+ 
+
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Cedarville+Cursive&family=Corinthia:wght@400;700&family=Jim+Nightshade&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lavishly+Yours&family=Mea+Culpa&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Cedarville+Cursive&family=Corinthia:wght@400;700&family=Felipa&family=Fjalla+One&family=Jim+Nightshade&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lavishly+Yours&family=Mea+Culpa&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Cedarville+Cursive&family=Corinthia:wght@400;700&family=Felipa&family=Jim+Nightshade&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lavishly+Yours&family=Mea+Culpa&family=Shadows+Into+Light&display=swap');
+@import "tailwindcss";
+
+
+@theme{
+  --font-Mea: Mea Culpa,"sans-serif";
+}
+
+@theme{
+  --font-Jim: Jim Nightshade,"sans-serif";
+}
+
+
+@theme{
+  --font-Ced: Cedarville Cursive,"sans-serif";
+}
+
+
+@theme {
+ 
+  
+  --font-bonheur: "Bonheur Royale", cursive;
+  --font-corinthia: "Corinthia", cursive;
+  --font-felipa: "Felipa", cursive;
+  --font-fjalla: "Fjalla One", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-lavish: "Lavishly Yours", cursive;
+  --font-shadow: "Shadows Into Light", cursive;
+  --font-creep: "Creepster", cursive;
+  --font-nosifer: "Nosifer", cursive;
+  --font-butch: "Butcherman", cursive;
+  --font-rock: "Rock Salt", cursive;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.perspective {
+  perspective: 1400px;
+}
+ 
