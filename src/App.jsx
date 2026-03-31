@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -10,14 +10,40 @@ import SendUsMessage from "./components/SendUsMessage";
 import CakeGallery from "./components/CakeGallery";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import About from "./components/About";
+import FloatingWhatsapp from "./components/FloatingWhatsapp";
  
+import TermsCondition from "./components/TermsCondition";
+ 
+
+function ScrollToHash() {
+  const { hash, pathname } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }, 100);
+      }
+    }
+  }, [hash, pathname]);
+
+  return null;
+}
 
 export default function App() {
   return (
     <main className="relative">
+      {/* Scroll handler for hash links */}
+      <ScrollToHash />
 
       <Routes>
-
         {/* Homepage */}
         <Route
           path="/"
@@ -25,34 +51,56 @@ export default function App() {
             <>
               <Navbar />
 
-              <div className="pt-5">
-                <section id="home"><Home /></section>
+              <div className="pt-[100px]">
+                <section id="home" className="scroll-mt-32">
+                  <Home />
+                </section>
+
+                <section id="cake-collections" className="scroll-mt-32">
+                  <CakeCollections />
+                </section>
+
+                <section id="about" className="scroll-mt-32">
+                  <About />
+                </section>
+
+                <section id="featured-products" className="scroll-mt-32">
+                  <FeaturedProducts />
+                </section>
+
+                <section id="product-menu" className="scroll-mt-32">
+                  <ProductMenu />
+                </section>
+
+                <section id="cake-gallery" className="scroll-mt-32">
+                  <CakeGallery />
+                </section>
+
+                <section id="send-us-message" className="scroll-mt-32">
+                  <SendUsMessage />
+                </section>
               </div>
 
-              <section id="cake-collections"><CakeCollections /></section>
-              <section id="featured-products"><FeaturedProducts /></section>
-              <section id="product-menu"><ProductMenu /></section>
-              <section id="cake-gallery"><CakeGallery /></section>
-              <section id="send-us-message"><SendUsMessage /></section>
-
+              <FloatingWhatsapp />
               <Footer />
             </>
           }
         />
 
-        {/* Gallery page */}
+        {/* Gallery Page */}
         <Route
           path="/cake-gallery"
           element={
             <>
               <Navbar />
               <CakeGallery />
+              <FloatingWhatsapp />
               <Footer />
             </>
           }
         />
 
-        {/* Privacy Policy WITHOUT Navbar */}
+        {/* Privacy Policy */}
         <Route
           path="/privacy-policy"
           element={
@@ -63,11 +111,17 @@ export default function App() {
           }
         />
 
-        {/* Terms & Conditions WITHOUT Navbar */}
-       
-
+        {/* Terms & Conditions */}
+        <Route
+          path="/terms-conditions"
+          element={
+            <>
+           <TermsCondition/>
+              <Footer />
+            </>
+          }
+        />
       </Routes>
-
     </main>
   );
 }

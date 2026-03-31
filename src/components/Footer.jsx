@@ -21,16 +21,28 @@ const SOCIAL_LINKS = [
 export default function Footer() {
 
   const scrollToSection = (id) => {
-    const el = document.getElementById(id);
 
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-      window.history.pushState(null, "", `#${id}`);
+    // If not on homepage, redirect to homepage section
+    if (window.location.pathname !== "/") {
+      window.location.href = `/#${id}`;
+      return;
+    }
+
+    // If already on homepage, scroll smoothly
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      window.history.replaceState(null, "", `#${id}`);
     }
   };
 
   return (
-<footer className="bg-gradient-to-br from-[#e0f1f3] via-[#31707f]/20 to-[#ffffff] font-semibold pt-14 pb-6 px-6 md:px-12">
+    <footer className="bg-gradient-to-br from-[#e0f1f3] via-[#31707f]/20 to-[#ffffff] font-semibold pt-14 pb-6 px-6 md:px-12">
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
 
@@ -42,7 +54,9 @@ export default function Footer() {
               alt="Crispimelts Logo"
               className="h-12"
             />
-            <span className="text-3xl font-Jim text-green-900">Crispimelts</span>
+            <span className="text-3xl font-Jim text-green-900">
+              Crispimelts
+            </span>
           </div>
 
           <p className="text-sm leading-relaxed opacity-90 text-[#246b75]">
@@ -53,7 +67,10 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-green-900">Quick Links</h3>
+
+          <h3 className="text-lg font-semibold mb-4 text-green-900">
+            Quick Links
+          </h3>
 
           <ul className="space-y-2 text-sm text-[#246b75]">
 
@@ -76,6 +93,13 @@ export default function Footer() {
               className="cursor-pointer hover:opacity-70 transition"
             >
               Signature Dishes
+            </li>
+
+            <li
+              onClick={() => scrollToSection("send-us-message")}
+              className="cursor-pointer hover:opacity-70 transition"
+            >
+              Contact
             </li>
 
             <li>
@@ -107,11 +131,15 @@ export default function Footer() {
             </li>
 
           </ul>
+
         </div>
 
         {/* Contact Section */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-green-900">Contact</h3>
+
+          <h3 className="text-lg font-semibold mb-4 text-green-900">
+            Contact
+          </h3>
 
           <div className="space-y-2 text-sm text-[#246b75]">
 
@@ -151,15 +179,14 @@ export default function Footer() {
             ))}
 
           </div>
+
         </div>
 
       </div>
 
       {/* Bottom Copyright */}
-      <div className=" text-green-900 border-t border-[#134739]/30 mt-10 pt-6 text-center text-sm">
-
+      <div className="text-green-900 border-t border-[#134739]/30 mt-10 pt-6 text-center text-sm">
         © {new Date().getFullYear()} Crispimelts. All rights reserved.
-
       </div>
 
     </footer>

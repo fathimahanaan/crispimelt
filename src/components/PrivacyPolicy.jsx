@@ -4,11 +4,17 @@ export default function PrivacyPolicy() {
   return (
     <div className="bg-white text-gray-800 px-6 md:px-12 py-16">
       <div className="max-w-4xl mx-auto">
-
-        <h1 className="text-3xl md:text-4xl font-bold mb-6">
+        
+ <img
+            src="/images/logo.png"
+            alt="Crispimelts Logo"
+            className="h-40 w-auto md:h-20"
+          />
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Privacy Policy
-        </h1>
-
+        </h2>
+        <h3 className="text-2xl">Crispimelt</h3>
+ 
         <p className="mb-6 text-sm text-gray-500">
           Effective Date:  March 29, 2026
         </p>

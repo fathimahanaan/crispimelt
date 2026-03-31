@@ -21,14 +21,14 @@ const sections = [
       { name: "Tantalizing Pleasure", image: "/images/im14.jpeg" },
       { name: "Sugar Rush", image: "/images/im15.jpeg" },
       { name: "Sugar Rush", image: "/images/im17.png" },
-      { name: "Healthy", image: "/images/im18.png" },
+      { name: "crispy", image: "/images/im18.png" },
     ],
   },
 ];
 
 export default function CakeGallery() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#e3f2f9] to-[#f7fbfc] px-6 sm:px-10 md:px-16 lg:px-20 xl:px-60 xl:pt-30 py-16">
+    <div className="min-h-screen bg-gradient-to-b from-[#e3f2f9] to-[#f7fbfc] mt-30 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-60 xl:pt-30 py-16">
       <h1 className="text-3xl sm:text-4xl md:text-4xl font-Jim mb-6 sm:mb-10 text-[#134739] drop-shadow-lg border-b-2 border-[#9dbbd5] w-fit mx-auto">
   Our Gallery
 </h1>
