@@ -29,7 +29,7 @@ const sections = [
 export default function CakeGallery() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#e3f2f9] to-[#f7fbfc] mt-30 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-60 xl:pt-30 py-16">
-      <h1 className="text-3xl sm:text-4xl md:text-4xl font-Jim mb-6 sm:mb-10 text-[#134739] drop-shadow-lg border-b-2 border-[#9dbbd5] w-fit mx-auto">
+<h1 className="text-3xl sm:text-4xl md:text-4xl font-sans font-semibold mb-6 sm:mb-10 text-[#134739] drop-shadow-lg border-b-2 border-[#9dbbd5] w-fit mx-auto tracking-tight">
   Our Gallery
 </h1>
       <p className="text-center text-[#134739] mb-12 max-w-3xl mx-auto text-sm sm:text-base">
@@ -39,7 +39,7 @@ export default function CakeGallery() {
       {sections.map((section, idx) => (
         <div key={idx} className="mb-16">
           {section.title && (
-            <h2 className="text-2xl sm:text-3xl md:text-2xl mb-6 text-[#134739] border-b-2 border-[#9dbbd5] w-fit pb-1 font-Jim">
+            <h2 className="text-2xl sm:text-3xl md:text-xl mb-6 text-[#134739] border-b-2 border-[#9dbbd5] w-fit pb-1  ">
               {section.title}
             </h2>
           )}
@@ -48,15 +48,15 @@ export default function CakeGallery() {
             {section.items.map((item, index) => (
               <div
                 key={index}
-                className="cursor-pointer font-Jim overflow-hidden bg-white/30 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition-transform hover:shadow-2xl rounded-lg"
+                className="cursor-pointer overflow-hidden bg-white/30 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition-transform hover:shadow-2xl rounded-lg"
               >
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-48 sm:h-56 md:h-48 lg:h-56 object-cover"
+                  className="w-full h-48 sm:h-56 md:h-48 lg:h-56  object-cover"
                   loading="lazy"
                 />
-                <h3 className="text-center text-lg sm:text-xl p-3 text-[#246b75]">
+                <h3 className="text-center text-sm sm:text-sm font-semibold p-3 text-[#246b75]">
                   {item.name}
                 </h3>
               </div>

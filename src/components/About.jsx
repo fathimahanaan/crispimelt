@@ -10,14 +10,14 @@ export default function About () {
 
         {/* Heading */}
         <div className="text-center mb-16 p-6 rounded-md bg-gradient-to-r from-[#9dbbd5]/30 via-[#7fa8c9]/30 to-[#9dbbd5]/30">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-3xl md:text-4xl font-Jim text-[#246b75]"
-          >
-            About Crispimelts
-          </motion.h2>
+<motion.h2
+  initial={{ opacity: 0, y: -20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="text-3xl md:text-4xl font-sans font-semibold tracking-tight text-[#246b75] border-b-2 border-[#9dbbd5] pb-2 inline-block"
+>
+  About Crispimelts
+</motion.h2>
         </div>
 
         {/* Content */}

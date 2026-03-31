@@ -26,7 +26,11 @@ export default function FeaturedProducts() {
 
   const cardVariants = {
     hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   return (
@@ -34,14 +38,14 @@ export default function FeaturedProducts() {
       <div className="border-4 border-[#9dbbd5] rounded-sm p-10">
         {/* Heading */}
         <div className="text-center mb-16 p-6 rounded-md bg-gradient-to-r from-[#9dbbd5]/30 via-[#7fa8c9]/30 to-[#9dbbd5]/30">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-3xl md:text-4xl font-heading text-[#246b75] font-Jim"
-          > 
-          Our Signature Dishes
-          </motion.h2>
+     <motion.h2
+  initial={{ opacity: 0, y: -20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="text-3xl md:text-4xl font-sans font-semibold tracking-tight text-[#246b75] border-b-2 border-[#9dbbd5] pb-2 inline-block"
+>
+  Our Signature Dishes
+</motion.h2>
         </div>
 
         {/* Grid of cakes */}
@@ -56,7 +60,10 @@ export default function FeaturedProducts() {
             <motion.div
               key={index}
               variants={cardVariants}
-              whileHover={{ scale: 1.05, boxShadow: "0 15px 35px rgba(0,0,0,0.2)" }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 15px 35px rgba(0,0,0,0.2)",
+              }}
               className="bg-white rounded-sm overflow-hidden shadow-sm border-3 border-[#a1bcbf] transition"
             >
               {/* Image */}
@@ -68,7 +75,9 @@ export default function FeaturedProducts() {
 
               {/* Title */}
               <div className="p-6 text-center">
-                <h3 className="text-sm font-semibold text-[#246b75]  ">{cake.name}</h3>
+                <h3 className="text-sm font-semibold text-[#246b75]  ">
+                  {cake.name}
+                </h3>
               </div>
             </motion.div>
           ))}

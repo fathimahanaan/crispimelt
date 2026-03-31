@@ -37,7 +37,7 @@ export default function ProductMenu() {
 
         {/* Title */}
         <div className="relative z-10 text-center">
-          <h2 className="text-3xl  md:text-4xl font-Jim text-[#134739]  border-b-2 border-[#9dbbd5]   pb-2  inline-block">
+ <h2 className="text-3xl md:text-3xl font-sans font-semibold tracking-tight text-[#134739] border-b-2 border-[#9dbbd5] pb-2 inline-block">
   Explore Our Delicious Treats
 </h2>
           <p className="  mt-4 max-w-2xl mx-auto text-green-900">

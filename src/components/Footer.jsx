@@ -54,7 +54,7 @@ export default function Footer() {
               alt="Crispimelts Logo"
               className="h-12"
             />
-            <span className="text-3xl font-Jim text-green-900">
+            <span className="text-xl font-semibold font-sans text-green-900">
               Crispimelts
             </span>
           </div>

@@ -40,15 +40,15 @@ export default function Home() {
     href="https://wa.me/971525657667"
     target="_blank"
     rel="noopener noreferrer"
-    className="px-8 py-4 w-full sm:w-auto bg-[#9dbbd5] font-Jim text-white rounded-lg hover:bg-[#0f352b] transition text-center"
+    className="px-8 py-4 w-full sm:w-auto bg-[#9dbbd5]   text-white rounded-lg hover:bg-[#0f352b] transition text-sm text-center"
   >
-    Order Custom Cake
+    Order  Cake
   </a>
 
   {/* Gallery Page */}
   <Link
     to="/cake-gallery"
-    className="px-8 py-4 w-full sm:w-auto font-Jim border border-white text-white rounded-lg hover:bg-white hover:text-black transition text-center"
+    className="px-8 py-4 w-full sm:w-auto  text-sm  border border-white text-white rounded-lg hover:bg-white hover:text-black transition text-center"
   >
     View Gallery
   </Link>

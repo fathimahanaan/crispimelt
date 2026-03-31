@@ -68,7 +68,7 @@ const handleScroll = (id) => {
             alt="Crispimelts Logo"
             className="h-20 w-auto md:h-12"
           />
-          <span className="text-2xl md:text-3xl font-Jim text-green-900">
+          <span className="text-2xl md:text-xl  font-semibold  text-green-900">
             Crispimelts
           </span>
         </div>
@@ -95,7 +95,7 @@ const handleScroll = (id) => {
         </ul>
 
         {/* Desktop Actions */}
-        <div className="hidden xl:flex items-center gap-6 font-Jim text-green-900 text-lg">
+        <div className="hidden xl:flex items-center gap-6   text-green-900 text-sm font-semibold">
           
           <a
             href="https://www.instagram.com/crispimelts"
@@ -103,7 +103,7 @@ const handleScroll = (id) => {
             rel="noopener noreferrer"
             className="hover:opacity-70 transition"
           >
-            Instagram
+            @crispimelts
           </a>
 
           <a href="tel:+971525657667" className="flex items-center gap-1 hover:underline">
