@@ -58,7 +58,7 @@ export default function About () {
 
             <p className="text-gray-600 leading-relaxed text-lg">
               Whether you're celebrating a special moment or simply craving 
-              something sweet, <span className="font-semibold text-[#246b75]">Crispimelts</span> 
+              something sweet, <span className="font-semibold text-[#246b75]">Crispimelts </span> 
               brings warmth, flavor, and creativity to every creation.
             </p>
 
