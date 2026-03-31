@@ -42,7 +42,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-[#e0f1f3] via-[#31707f]/20 to-[#ffffff] font-semibold pt-14 pb-6 px-6 md:px-12">
+    <footer className="bg-gradient-to-br from-[#e0f1f3] via-[#31707f]/20 to-[#ffffff]   pt-14 pb-6 px-6 md:px-12">
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
 
@@ -59,7 +59,7 @@ export default function Footer() {
             </span>
           </div>
 
-          <p className="text-sm leading-relaxed opacity-90 text-[#246b75]">
+          <p className="text-sm leading-relaxed opacity-90 text-[#246b75] font-semibold">
             Premium custom cakes and signature desserts crafted with passion.
             Making every celebration sweeter.
           </p>
@@ -72,7 +72,7 @@ export default function Footer() {
             Quick Links
           </h3>
 
-          <ul className="space-y-2 text-sm text-[#246b75]">
+          <ul className="space-y-2 text-sm text-[#246b75] font-semibold">
 
             <li
               onClick={() => scrollToSection("home")}
@@ -141,7 +141,7 @@ export default function Footer() {
             Contact
           </h3>
 
-          <div className="space-y-2 text-sm text-[#246b75]">
+          <div className="space-y-2 text-sm text-[#246b75] font-semibold">
 
             <p>Crispimelts General Trading LLC</p>
 
