@@ -37,7 +37,7 @@ export default function SendUsMessage() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#f0f4f5] to-[#ffffff] p-4 sm:p-6 ">
+<section className="flex items-center justify-center bg-gradient-to-b from-[#f0f4f5] to-[#ffffff] p-4 sm:p-6 xl:p-4">
 <div className="flex flex-col lg:flex-row  bg-white shadow-2xl overflow-hidden w-full max-w-6xl  lg:border-0">
 
         {/* LEFT SIDE */}
@@ -130,8 +130,8 @@ export default function SendUsMessage() {
         {/* RIGHT SIDE FORM */}
         <div className="lg:w-1/2 w-full p-6 sm:p-8 lg:p-10 flex flex-col justify-center items-center bg-[#fefefe]">
 
-          <h2 className="text-lg font-[Inter] sm:text-3xl text-[#134739]  font-semibold mb-6   text-center">
-            Send  Message
+          <h2 className="text-md font-[Inter] sm:text-2xl text-[#134739]    mb-6   text-center">
+            Send us a Message
           </h2>
 
           <form
