@@ -38,8 +38,8 @@ export default function CakeCollections() {
 
       {/* Heading */}
       <div className="text-center mb-16">
- <h2 className="text-xl md:text-4xl font-sans font-semibold text-green-900 border-b-2 border-[#9dbbd5] w-fit pb-2 mx-auto">
-   Cake Collections
+<h2 className="text-xl md:text-4xl font-[Inter]   text-green-900 border-b-2 border-[#9dbbd5] w-fit pb-2 mx-auto tracking-tight">
+  Cake Collections
 </h2>
   <p className="mt-4 max-w-xl mx-auto text-[#31707f]/90 text-lg md:text-xl">
   Discover our delicious collection of handcrafted cakes perfect for birthdays,

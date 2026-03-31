@@ -25,7 +25,7 @@ export default function Home() {
 
         {/* Hero content */}
         <div className="relative z-10 flex flex-col items-center text-center px-8 py-16 h-full justify-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-Jim mb-6 text-white leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[Inter] mb-6 text-white leading-tight">
             Luxury <span className="text-[#9dbbd5]">Custom Cakes</span>
           </h1>
 
@@ -40,7 +40,7 @@ export default function Home() {
     href="https://wa.me/971525657667"
     target="_blank"
     rel="noopener noreferrer"
-    className="px-8 py-4 w-full sm:w-auto bg-[#9dbbd5]   text-white rounded-lg hover:bg-[#0f352b] transition text-sm text-center"
+    className="px-8 py-4 w-full sm:w-auto bg-[#9dbbd5] font-[Inter]  text-white rounded-lg hover:bg-[#0f352b] transition text-sm text-center"
   >
     Order  Cake
   </a>
@@ -48,7 +48,7 @@ export default function Home() {
   {/* Gallery Page */}
   <Link
     to="/cake-gallery"
-    className="px-8 py-4 w-full sm:w-auto  text-sm  border border-white text-white rounded-lg hover:bg-white hover:text-black transition text-center"
+    className="px-8 py-4 w-full sm:w-auto  text-sm font-[Inter]  border border-white text-white rounded-lg hover:bg-white hover:text-black transition text-center"
   >
     View Gallery
   </Link>

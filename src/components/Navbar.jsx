@@ -59,7 +59,7 @@ const handleScroll = (id) => {
       </div>
 
       {/* Main Navbar */}
-      <nav className="flex items-center justify-between px-6 md:px-12 py-5 bg-white/80 backdrop-blur-lg">
+      <nav className="flex items-center justify-between px-6 md:px-12 py-5  font-[Poppins] bg-white/80 backdrop-blur-lg">
         
         {/* Logo */}
         <div className="flex items-center gap-3">
@@ -68,13 +68,13 @@ const handleScroll = (id) => {
             alt="Crispimelts Logo"
             className="h-20 w-auto md:h-12"
           />
-          <span className="text-2xl md:text-xl  font-semibold  text-green-900">
+          <span className="text-md md:text-xl  font-semibold  text-green-900">
             Crispimelts
           </span>
         </div>
 
         {/* Desktop Links */}
-        <ul className="hidden xl:flex gap-10 text-sm font-semibold text-green-900/90">
+        <ul className="hidden xl:flex gap-10 text-md font-semibold text-green-900/90">
           {NAV_ITEMS.map((item) => (
             <li
               key={item.id}
@@ -95,18 +95,18 @@ const handleScroll = (id) => {
         </ul>
 
         {/* Desktop Actions */}
-        <div className="hidden xl:flex items-center gap-6   text-green-900 text-sm font-semibold">
+        <div className="hidden xl:flex items-center gap-6   text-green-900 text-md  ">
           
           <a
             href="https://www.instagram.com/crispimelts"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:opacity-70 transition"
+            className="hover:opacity-70 transition font-semibold"
           >
             @crispimelts
           </a>
 
-          <a href="tel:+971525657667" className="flex items-center gap-1 hover:underline">
+          <a href="tel:+971525657667" className="flex items-center font-semibold gap-1 hover:underline">
             +971 52 565 7667
           </a>
 
@@ -165,7 +165,7 @@ const handleScroll = (id) => {
               href="https://wa.me/971525657667"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full text-center py-3 bg-[#9dbbd5] text-white rounded-xl font-Jim text-lg hover:bg-[#134739] transition"
+              className="w-full text-center py-3 bg-[#9dbbd5] text-white rounded-xl text-md font-semibold hover:bg-[#134739] transition"
             >
               Order Cake
             </a>
@@ -174,7 +174,7 @@ const handleScroll = (id) => {
               href="tel:+971525657667"
               className="w-full text-center py-3 border border-[#134739] rounded-xl font-Jim text-lg hover:bg-[#134739] hover:text-white transition"
             >
-              Call +971 52 565 7667
+               +971 52 565 7667
             </a>
 
           </div>

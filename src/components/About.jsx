@@ -14,7 +14,8 @@ export default function About () {
   initial={{ opacity: 0, y: -20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
-  className="text-lg md:text-4xl font-sans font-semibold tracking-tight text-[#246b75] border-b-2 border-[#9dbbd5] pb-2 inline-block"
+ 
+  className="text-lg md:text-4xl font-[Inter]   text-[#246b75] border-b-2 border-[#9dbbd5] pb-2 inline-block"
 >
   About Crispimelts
 </motion.h2>
