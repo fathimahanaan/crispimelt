@@ -87,6 +87,12 @@ export default function Footer() {
             >
               Custom Cakes
             </li>
+                <li
+              onClick={() => scrollToSection("about")}
+              className="cursor-pointer hover:opacity-70 transition"
+            >
+              About
+            </li>
 
             <li
               onClick={() => scrollToSection("featured-products")}
