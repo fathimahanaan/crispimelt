@@ -12,9 +12,9 @@ import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import About from "./components/About";
 import FloatingWhatsapp from "./components/FloatingWhatsapp";
- 
+
 import TermsCondition from "./components/TermsCondition";
- 
+import Map from "./components/Map";
 
 function ScrollToHash() {
   const { hash, pathname } = useLocation();
@@ -79,6 +79,7 @@ export default function App() {
                 <section id="send-us-message" className="scroll-mt-32">
                   <SendUsMessage />
                 </section>
+               <Map/>
               </div>
 
               <FloatingWhatsapp />
@@ -116,7 +117,7 @@ export default function App() {
           path="/terms-conditions"
           element={
             <>
-           <TermsCondition/>
+              <TermsCondition />
               <Footer />
             </>
           }
