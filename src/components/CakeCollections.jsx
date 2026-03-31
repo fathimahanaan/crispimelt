@@ -41,7 +41,7 @@ export default function CakeCollections() {
 <h2 className="text-xl md:text-4xl font-[Inter]   text-green-900 border-b-2 border-[#9dbbd5] w-fit pb-2 mx-auto tracking-tight">
   Cake Collections
 </h2>
-  <p className="mt-4 max-w-xl mx-auto text-[#31707f]/90 text-lg md:text-xl">
+  <p className="mt-4 max-w-xl mx-auto text-[#31707f]/90 text-md md:text-lg">
   Discover our delicious collection of handcrafted cakes perfect for birthdays,
   weddings, anniversaries, and special moments. 
    
