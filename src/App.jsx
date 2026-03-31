@@ -51,7 +51,7 @@ export default function App() {
             <>
               <Navbar />
 
-              <div className="pt-[100px]">
+              <div className="pt-[65px]">
                 <section id="home" className="scroll-mt-32">
                   <Home />
                 </section>
