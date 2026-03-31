@@ -45,7 +45,7 @@ export default function SendUsMessage() {
 
           <div>
 
-            <h2 className="text-3xl sm:text-3xl font-semibold  text-[#134739] tracking-wide mb-3">
+            <h2 className="text-lg sm:text-3xl font-semibold  text-[#134739] tracking-wide mb-3">
               Contact
             </h2>
 
@@ -130,7 +130,7 @@ export default function SendUsMessage() {
         {/* RIGHT SIDE FORM */}
         <div className="lg:w-1/2 w-full p-6 sm:p-8 lg:p-10 flex flex-col justify-center items-center bg-[#fefefe]">
 
-          <h2 className="text-3xl sm:text-3xl text-[#134739]  font-semibold mb-6 font-sans text-center">
+          <h2 className="text-lg sm:text-3xl text-[#134739]  font-semibold mb-6 font-sans text-center">
             Send  Message
           </h2>
 
