@@ -2,8 +2,9 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const GOOGLE_API_KEY = "AIzaSyAIcq-usO3Bq79IHaEwb4SiYq68_lW8MDk"; // replace
-const PLACE_ID = "ChIJU5g6ASZZXz4RuNeN_0_67oQ";
+const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+const PLACE_ID = import.meta.env.VITE_GOOGLE_PLACE_ID;
+
 const CACHE_KEY = "google_reviews";
 const CACHE_DURATION = 1000 * 60 * 60; // 1 hour
 const GOOGLE_MAPS_URL = `https://www.google.com/maps/place/?q=place_id:${PLACE_ID}`;
