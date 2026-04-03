@@ -15,6 +15,7 @@ import FloatingWhatsapp from "./components/FloatingWhatsapp";
 
 import TermsCondition from "./components/TermsCondition";
 import Map from "./components/Map";
+import Testimonials from "./components/Testimonials";
 
 function ScrollToHash() {
   const { hash, pathname } = useLocation();
@@ -79,6 +80,7 @@ export default function App() {
                 <section id="send-us-message" className="scroll-mt-32">
                   <SendUsMessage />
                 </section>
+                <Testimonials/>
                <Map/>
               </div>
 

@@ -10,23 +10,23 @@ export default function CakeCollections() {
  
     { name: "Strawberry Cheesecake Portion", image: "/images/w1.jpeg" },
     { name: "Strawberry Cheesecake", image: "/images/w2.jpeg" },
-    { name: "Mango Cheesecake Portion", image: "/images/w3.jpeg" },
+ 
     { name: "Mango Cheesecake Portion", image: "/images/w5.jpeg" },
     { name: "Blueberry Cheesecake Portion", image: "/images/w4.jpeg" },
     { name: "Blueberry Cheesecake", image: "/images/w8.jpeg" },
-    { name: "Pistachio Cake Portion", image: "/images/w6.jpeg" },
-    { name: "Tres Leches Cake", image: "/images/tres.png" },
+     { name: "Tres Leches Cake", image: "/images/tres.png" },
+         { name: "Pistachio Cake Portion", image: "/images/w6.jpeg" },
        { name: "Cappuccino Cake", image: "/images/hi4.jpeg" },
       { name: "Pistachio Cake", image: "/images/hi5.jpeg" },
       { name: "Mango Cake", image: "/images/hi6.jpeg" },
  
     // { name: "Milk Cakes", image: "/images/coll10.png" },
     // { name: "Custom Cakes", image: "/images/coll8.png" },
-    // { name: "Birthday Cakes", image: "/images/coll1.png" },
+    { name: "Birthday Cakes", image: "/images/coll1.png" },
     // { name: "Custom Cakes", image: "/images/coll11.png" },
     // { name: "Special Occasion Cakes", image: "/images/coll12.png" },
      { name: "Kefaya Cakes", image: "/images/coll14.png" },
-    // { name: "Halloween Cakes", image: "/images/coll3.png" },
+    { name: "Halloween Cakes", image: "/images/coll3.png" },
  
     //     { name: "Wedding Cakes", image: "/images/coll2.png" },
     // { name: "Special Occasion Cakes", image: "/images/coll5.png" },
